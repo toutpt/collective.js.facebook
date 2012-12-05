@@ -1,0 +1,6 @@
+<layers>
+<!-- uncomment to activate
+    <layer name="collective.js.facebook"
+           interface="collective.js.facebook.interfaces.ILayer" />
+-->
+</layers>

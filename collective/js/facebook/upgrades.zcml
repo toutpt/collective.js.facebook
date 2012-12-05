@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.facebook">
+
+    <upgradeStep
+        source="*"
+        destination="1001"
+        title="Common Upgrade"
+        description=""
+        profile="collective.js.facebook:default"
+        handler=".upgrades.common"
+        />
+
+</configure>
