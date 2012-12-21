@@ -4,11 +4,6 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.js.facebook">
 
-  <browser:resourceDirectory
-    name="collective.js.facebook"
-    directory="resources"
-    />
-
   <include file="upgrades.zcml"/>
 
   <genericsetup:registerProfile

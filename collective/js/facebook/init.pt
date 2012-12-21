@@ -1,0 +1,26 @@
+<div id="fb-root"></div>
+<script type="text/javascript" tal:content="string:
+  /*&lt;![CDATA[*/
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '${view/app_id}',
+      channelUrl : '${view/site_url}/@@facebook_channel',
+      status     : ${view/status},
+      cookie     : ${view/cookie},
+      xfbml      : ${view/xfbml}
+    });
+
+    ${view/addition_init_code}
+
+  };
+
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = '//connect.facebook.net/${view/language_code}/all.js';
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+  /*]]&gt;*/
+">
+</script>
